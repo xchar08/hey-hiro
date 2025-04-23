@@ -1,12 +1,12 @@
 # Hey‑Hiro: Voice‐Activated AI Drone Controller
 
-**Hey‑Hiro** is an AI assistant web app built with Next.js and Electron.  It listens for the wake phrase **“Hey Hero”** and then executes voice commands to control a swarm of Crazyflie drones (via Python scripts) or generate new flight code using the Cerebras API.  All code generation, command execution, and drone resets are routed through an Electron companion process.
+**Hey‑Hiro** is an AI assistant web app built with Next.js and Electron.  It listens for the wake phrase **“Hey Hiro”** and then executes voice commands to control a swarm of Crazyflie drones (via Python scripts) or generate new flight code using the Cerebras API.  All code generation, command execution, and drone resets are routed through an Electron companion process.
 
 ---
 
 ## 🚀 Features
 
-- **Wake‑Word Activation**: Say **“Hey Hero”** to trigger voice command mode.
+- **Wake‑Word Activation**: Say **“Hey Hiro”** to trigger voice command mode.
 - **Drone Control Commands**:
   - **Hover** specific drones (with optional duration & height).
   - **Circle** formation.
@@ -127,7 +127,7 @@ npm install   # ensures companion deps are in root package.json
    ```
 3. Open your browser at `http://localhost:3000`.
 
-Speak `"Hey Hero, ..."` to issue commands!
+Speak `"Hey Hiro, ..."` to issue commands!
 
 ---
 
@@ -135,14 +135,14 @@ Speak `"Hey Hero, ..."` to issue commands!
 
 | Command Pattern                                                             | Action                                                       |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| `Hey Hero, make drones 1, 2 hover`                                          | Hover drones 1 & 2 at default height & duration              |
-| `Hey Hero, make drone 3 hover for 5 seconds at height 1 meter`              | Hover drone 3 for 5s at 1m                                   |
-| `Hey Hero, make all drones fly in a circle`                                 | Circle formation demo                                        |
-| `Hey Hero, make all drones fly in a v formation with drone 1 as leader`     | V formation demo                                             |
-| `Hey Hero, make all drones surround drone 1`                                | Surround demo                                                |
-| `Hey Hero, make drone 2 fly in a spiral pattern`                            | Runs custom spiral demo script                               |
-| `Hey Hero, reset drone 4`                                                   | Resets individual drone                                      |
-| `Hey Hero, reset all drones`                                                | Resets all drones                                            |
+| `Hey Hiro, make drones 1, 2 hover`                                          | Hover drones 1 & 2 at default height & duration              |
+| `Hey Hiro, make drone 3 hover for 5 seconds at height 1 meter`              | Hover drone 3 for 5s at 1m                                   |
+| `Hey Hiro, make all drones fly in a circle`                                 | Circle formation demo                                        |
+| `Hey Hiaro, make all drones fly in a v formation with drone 1 as leader`    | V formation demo                                             |
+| `Hey Hiro, make all drones surround drone 1`                                | Surround demo                                                |
+| `Hey Hiro, make drone 2 fly in a spiral pattern`                            | Runs custom spiral demo script                               |
+| `Hey Hiro, reset drone 4`                                                   | Resets individual drone                                      |
+| `Hey Hiro, reset all drones`                                                | Resets all drones                                            |
 | **Any other command**                                                       | Generates code via Cerebras API + prompts for execution      |
 
 ---
