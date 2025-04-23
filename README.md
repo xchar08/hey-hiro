@@ -41,7 +41,7 @@
 +----------------------+        +------------------+       +-----------------------+
          ^   ^                          ^  ^                           ^    ^
          | Voice + HTTP                 | HTTP                       | CLI
-         | Recognition                  | Command endpoints         | Drone SDK / Vicon
+         | Recognition                  | Command endpoints          | Drone SDK / Vicon
          v                             v                             v
    Web Speech API                  Axios calls                  Crazyflie Python lib
 ```
