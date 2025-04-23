@@ -1,0 +1,38 @@
+{
+    "name": "hey-hiro",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "companion": "electron companion-app/main.js"
+    },
+    "dependencies": {
+        "@cerebras/cerebras_cloud_sdk": "^1.29.0",
+        "@chakra-ui/react": "^2.8.2",
+        "axios": "^1.7.7",
+        "body-parser": "^2.2.0",
+        "cors": "^2.8.5",
+        "express": "^5.1.0",
+        "framer-motion": "^11.5.4",
+        "next": "15.3.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-icons": "^5.5.0"
+    },
+    "devDependencies": {
+        "@eslint/eslintrc": "^3.0.0",
+        "@types/node": "^20.0.0",
+        "@types/react": "^18.0.0",
+        "@types/react-dom": "^18.0.0",
+        "@types/three": "^0.175.0",
+        "css-loader": "^7.1.2",
+        "electron": "^32.3.3",
+        "eslint": "^9.0.0",
+        "eslint-config-next": "15.3.1",
+        "style-loader": "^4.0.0",
+        "typescript": "^5.0.0"
+    }
+}
